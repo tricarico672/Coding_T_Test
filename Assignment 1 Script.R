@@ -61,7 +61,8 @@ table1::label(ds$age) <- "Age" #labels the column containing ages "Age"
 table1::label(ds$introduction) <- #labels the column containing introductions "Introduction"
   table1::label(ds$MA_think) <- "Attribution of cognitive abilities" #labels the column containing measurements of the DV "Attribution of cognitive abilities"
 table1::table1(~gender + age + MA_think | introduction, data = ds) #finally puts together the pieces and generates the table
-#THE ASSIGNMENT ENDS HERE, HOWEVER, FEEL FREE TO CHECK WHERE I WAS HEADED WITH THE FOLLOWING NON-WORKING T-TEST THAT INCLUDED ALSO ASSUMPTION CHECKS (THERE IS PROBABLY A SILLY MISTAKE WITH THE IF STATEMENT BUT I HOPE AT LEAST THE REASONING BEHIND IT IS CORRECT). ANY SUGGESTION ON HOW I COULD IMPROVE WOULD BE HIGHLY APPRECIATED THANK YOU!
+
+
 #the following is an example of a possible function that includes assumption checks in the t-test
 #My_t.tassumptions<- function(x, y, independent=TRUE) {
 #normcheck <- shapiro.test(x)$p #stores p-value of shapiro-test for first group in variable normcheck
